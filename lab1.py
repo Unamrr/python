@@ -28,7 +28,19 @@ else:
     print(n)
   //2
 
+N = int(input("N : "))
+M = int(input("M : "))
+x = int(input("x : "))
+y = int(input("y : "))
 
+L = max(N, M)
+l = min(N, M)
+
+d_long = min(x, l - x)
+
+d_court = min(y, L - y)
+
+print(min(d_long, d_court))
 //1
 # 1
 """
