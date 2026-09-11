@@ -27,20 +27,36 @@ if n%2==0:
 else:
     print(n)
   //2
+n = int(input("N = "))
+m = int(input("M = "))
+x = int(input("x = "))
+y = int(input("y = "))
 
-N = int(input("N : "))
-M = int(input("M : "))
-x = int(input("x : "))
-y = int(input("y : "))
+if n>m:
+    if x>=n-x:
+        a=n-x
+    else:
+        a=x
 
-L = max(N, M)
-l = min(N, M)
+    if y>=m-y:
+        b=m-y
+    else:
+        b=y
+else:
+    if x>=m-x:
+        a=m-x
+    else:
+        a=x
 
-d_long = min(x, l - x)
+    if y>=n-y:
+        b=n-y
+    else:
+        b=y
 
-d_court = min(y, L - y)
-
-print(min(d_long, d_court))
+if a>b:
+    print(b)
+else:
+    print(a)
 //1
 # 1
 """
