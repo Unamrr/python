@@ -1,14 +1,14 @@
-//1
+#1 
 n = int(input())
 hours = (n // 60) % 24
 minutes = n % 60
 print(hours, minutes)
-//2
+#2
 
 n = int(input("kids: "))
 k = int(input("apples: "))
 print((n-k%n)*(k%n>0))
-//3
+3
 n = int(input("n: "))
 print(n + 2 - n % 2)
 //4
@@ -27,36 +27,7 @@ if n%2==0:
 else:
     print(n)
   //2
-n = int(input("N = "))
-m = int(input("M = "))
-x = int(input("x = "))
-y = int(input("y = "))
 
-if n > m:
-    if x >= n - x:
-        a = n - x
-    else:
-        a = x
-
-    if y >= m - y:
-        b = m - y
-    else:
-        b = y
-else:
-    if x >= m - x:
-        a = m - x
-    else:
-        a = x
-
-    if y >= n - y:
-        b = n - y
-    else:
-        b = y
-
-if a > b:
-    print(b)
-else:
-    print(a)
 
 //1
 # 1
